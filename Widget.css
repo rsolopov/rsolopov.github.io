@@ -6,3 +6,7 @@
 .b-registration__section_no-bottom-space {
 	background-color: #FFFFFF;
 }
+
+.span3 {
+	display: none;
+}
