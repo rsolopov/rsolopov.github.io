@@ -1,0 +1,27 @@
+body {
+	background-color: #C6E2FF;
+}
+
+div {
+	background-color: #FFFF00;
+}
+
+p {
+	background-color: #FFFF00;
+}
+
+.main {
+	background-color: #FFFF00;
+}
+
+#main {
+	background-color: #FFFF00;
+}
+
+a {
+	background-color: #FFFF00;
+}
+
+a:hover {
+    color: #00FF00;
+}
