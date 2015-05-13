@@ -1,0 +1,113 @@
+<form class="i-page i-jquery i-less i-bootstrap" id="eventreg_form" action="{{event.domain}}event/widget_register/{{event.id}}">
+{{#event.is_recurring}}
+    <div class="b-registration__section b-registration__section_indent">
+        <div class="b-date-choice__day">
+            {{selectedRecurringEvent.date_h}}
+            <a class="js-open-date-choice b-date-choice__select-date" href="#">Выбрать другую дату</a>
+        </div>
+    </div>
+{{/event.is_recurring}}
+<div class="b-registration__section b-registration__section_no-bottom-space">
+    {{#event.texts.reg_desc}}
+    <p class="b-reg-descr">{{{event.texts.reg_desc}}}</p>
+    {{/event.texts.reg_desc}}
+</div>
+{{> _promocodeBlock}}
+{{> _selectTickets}}
+
+{{^event.promocode_locked}}
+
+{{#event.uses_multiank}}
+<div class="b-registration__section hide section-multiankadd b-registration__section_indent">
+    <div class="b-add-attendees">
+        <a class="b-pro-wiget__reg-button add-attendees">Заполнить анкеты</a>
+    </div>
+</div>
+{{/event.uses_multiank}}
+
+<div class="b-registration__section b-registration__section_no-bottom-space">
+    <div class="b-registration__error hide"></div>
+</div>
+
+<div class="b-registration__section b-registration__section_indent section-ank">
+    {{#event.uses_order_email}}
+    <div class="row-fluid">
+        <div class="control-group b-reg-row" data-formname="order_mail">
+            <label class="b-unit__text b-registration__question">
+                E-mail заказчика <span class="b-registration__question_mandatory">*</span>
+            </label>
+
+            <div class="b-input-block i-question-control">
+                <input type="text" name="order_mail" class="span12 b-input" value="{{{prefill.order.order_mail}}}">
+            </div>
+        </div>
+    </div>
+    {{/event.uses_order_email}}
+
+    {{#event.has_master_questions}}
+        <div class="b-attendee-divide">
+            {{#event.master_questions}}
+                {{> _question}}
+            {{/event.master_questions}}
+        </div>
+    {{/event.has_master_questions}}
+
+    <div class="b-attendees">
+    {{#attendees}}
+        {{> _attendee_form}}
+    {{/attendees}}
+    </div>
+
+    {{#event.uses_multiank}}
+        <div class="b-add-attendee hide">
+            {{#event.uses_ticket_choice}}
+                <select class="add-attendee-re">
+                {{#event.tickets}}
+                    <option value="{{id}}" class="add-attendee-re-option-{{id}}">{{{name}}} ({{h_price}})</option>
+                {{/event.tickets}}
+                </select>
+            {{/event.uses_ticket_choice}}
+            <a href="#" class="add-attendee">Добавить участника</a>
+        </div>
+    {{/event.uses_multiank}}
+</div>
+
+<div class="b-registration__section section-submit b-registration__section_indent">
+
+    <div class="b-registration__check">
+        {{#event.uses_subscribe}}
+            <div class="b-registration__check-block">
+                <label class="b-registration__accept">
+                    <input type="checkbox" name="subscribe" checked="checked">
+                    <span>Я хочу получать анонсы событий этого организатора по электронной почте</span>
+                </label>
+            </div>
+        {{/event.uses_subscribe}}
+
+        {{#event.uses_digest}}
+        <div class="b-registration__check-block">
+            <label class="b-registration__accept">
+                <input type="checkbox" name="subscribe_digest" checked="checked">
+                <span>Я хочу получать дайджест интересных событий от TimePad</span>
+            </label>
+        </div>
+        {{/event.uses_digest}}
+    </div>
+
+    <button class="b-pro-wiget__reg-button" name="submit_register" id="eventreg_submit">Зарегистрироваться</button>
+
+    <p class="b-registration__terms">
+        Продолжая регистрацию, вы принимаете условия
+        <a href="http://timepad.ru/upload/docs/TimePad_useragreement.pdf" target="_blank">Пользовательского соглашения</a> и согласны на обработку персональных данных.
+    </p>
+
+    <p class="b-registration__terms">
+        Поля, отмеченные звездочкой (<span class="b-registration__question_mandatory">*</span>), нужно обязательно заполнить
+    </p>
+
+</div>
+{{/event.promocode_locked}}
+{{> _footer}}
+
+
+</form>
