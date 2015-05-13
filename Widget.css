@@ -1,8 +1,8 @@
 .b-reg-descr {
 	border: 3px solid #FFFF00;
-	background-color: #FFFFFF;
+	background-color: #0000FF;
 }
 
-.b-registration__section:first-of-type {
-	background-color: #FFFFFF;
+.b-registration__section_no-bottom-space {
+	background-color: #0000FF;
 }
