@@ -25,3 +25,8 @@ a {
 a:hover {
     color: #00FF00;
 }
+
+.b-registration__section_no-bottom-space {
+	background-color: #FFFF00;	
+}
+}
