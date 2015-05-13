@@ -2,3 +2,7 @@
 	border: 3px solid #FFFF00;
 	background-color: #FFFFFF;
 }
+
+.b-registration__section:first-of-type {
+	background-color: #FFFFFF;
+}
