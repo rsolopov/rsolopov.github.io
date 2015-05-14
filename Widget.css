@@ -33,7 +33,12 @@ select {
 	display: none;
 }
 
-.b-reg-table__row:nth-of-type(2n) {
+.b-reg-table__row {
 	background-color: #D8EFF8;
 	margin-bottom: 8px;
 }
+
+/*.b-reg-table__row:nth-of-type(2n) {
+	background-color: #D8EFF8;
+	margin-bottom: 8px;
+}*/
