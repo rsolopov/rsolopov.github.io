@@ -42,12 +42,12 @@ select {
 .b-reg-table {
 	border-bottom-width: 0px;
 }
-.b-input-block {
-	border: 4px solid #000000;
-}
+/*.b-input-block {
+	border: 4px solid #D8EFF8;
+}*/
 input {
 	border-radius: 0px !important;
 }
 .b-input {
-	border: 1px solid #D8EFF8 !important;
+	border: 4px solid #D8EFF8 !important;
 }
