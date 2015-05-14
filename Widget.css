@@ -1,5 +1,5 @@
 .b-reg-descr {
-	border: 4px solid #FBE300;
+	border: 5px solid #FBE300;
 	background-color: #FFFFFF;
 }
 
@@ -31,12 +31,12 @@ select {
 
 .b-reg-table__row {
 	background-color: #D8EFF8;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .b-reg-table__row:nth-of-type(2n) {
 	background-color: #D8EFF8;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .b-reg-table {
