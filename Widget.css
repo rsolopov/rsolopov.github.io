@@ -13,15 +13,14 @@
 
 select {
 	border: 1 !important; 
-		-webkit-appearance: none; 
- 		-moz-appearance: none;
-		background: #FFFFFF url(http://www.8bitsports.net/wp-content/themes/morning/functions/wpzoom/assets/images/jquery.selectBox-arrow.gif) no-repeat 90% center;
-		/*width: 150px;*/
-		text-indent: 0.01px;
- 		text-overflow: "";
-		color: #FFF;
-		line-height: 15px;
-		box-shadow: inset 0 0 10px 0px rgba(000,000,000, 0.3);
+	-webkit-appearance: none; 
+ 	-moz-appearance: none;
+	background: #FFFFFF url(http://www.8bitsports.net/wp-content/themes/morning/functions/wpzoom/assets/images/jquery.selectBox-arrow.gif) no-repeat 90% center;
+	text-indent: 0.01px;
+ 	text-overflow: "";
+	color: #FFF;
+	line-height: 15px;
+	box-shadow: inset 0 0 10px 0px rgba(000,000,000, 0.3);
 
 }
 
