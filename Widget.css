@@ -28,7 +28,6 @@ select {
 
 .b-registration__header {
 	display: none;
-	/*visibility: hidden;*/
 }
 
 .b-reg-table__row:nth-of-type(2n) {
