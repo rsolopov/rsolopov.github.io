@@ -13,8 +13,8 @@
 
 select {
 	border: 1 !important; 
-		-webkit-appearance: menulist-textfield; 
- 		-moz-appearance: menulist-textfield;
+		-webkit-appearance: none; 
+ 		-moz-appearance: none;
 		background: #FFFFFF url(http://www.8bitsports.net/wp-content/themes/morning/functions/wpzoom/assets/images/jquery.selectBox-arrow.gif) no-repeat 90% center;
 		/*width: 150px;*/
 		text-indent: 0.01px;
