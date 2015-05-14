@@ -1,6 +1,6 @@
-body {
+/*body {
 	background-color: #FFFF00;
-}
+}*/
 
 .b-reg-descr {
 	border: 5px solid #FBE300;
@@ -49,7 +49,7 @@ select {
 .b-input-block {
 	border: 4px solid #D8EFF8;
 }
-.b-input {
-	border: 0px;
+.span12 {
+	border: 4px solid #D8EFF8;
 }
 
