@@ -33,4 +33,5 @@ select {
 
 .b-reg-table__row:nth-of-type(2n) {
 	background-color: #ADD8E6;
+	margin-bottom: 32px;
 }
