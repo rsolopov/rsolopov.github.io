@@ -17,8 +17,8 @@ select {
  		-moz-appearance: none; /* Removes Default Firefox style*/
 		background: #FFFFFF url(http://www.8bitsports.net/wp-content/themes/morning/functions/wpzoom/assets/images/jquery.selectBox-arrow.gif) no-repeat 90% center;
 		width: 100px;
-		text-indent: 0.01px; /* Removes default arrow from firefox*/
- 		text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+		/*text-indent: 0.01px; /* Removes default arrow from firefox*/
+ 		/*text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
 		color: #FFF;
 		box-shadow: inset 0 0 10px 0px rgba(000,000,000, 0.7);
 
