@@ -42,3 +42,6 @@ select {
 .b-reg-table {
 	border-bottom-width: 0px;
 }
+.b-input-block {
+	border: 4px solid #D8EFF8;
+}
