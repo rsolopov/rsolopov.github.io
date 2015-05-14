@@ -38,3 +38,7 @@ select {
 	background-color: #D8EFF8;
 	margin-bottom: 8px;
 }
+
+.b-reg-table {
+	border-bottom: 0px;
+}
