@@ -27,5 +27,5 @@ select {
 
 .b-registration__header {
 	display: none;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
