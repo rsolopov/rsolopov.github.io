@@ -1,3 +1,7 @@
+body {
+	background-color: #FFFF00;
+}
+
 .b-reg-descr {
 	border: 5px solid #FBE300;
 	background-color: #FFFFFF;
@@ -47,7 +51,8 @@ select {
 }
 input {
 	border-right-color: #FFFFFF;
-	border-right-color: #FFFFFF;
-	border-right-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
 }
 
